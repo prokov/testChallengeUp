@@ -1,0 +1,40 @@
+{
+  "sobloo-s2-l1c-aoiclipped:1": {
+    "intersects": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            13.36504,
+            52.502116
+          ],
+          [
+            13.398342,
+            52.509117
+          ],
+          [
+            13.404865,
+            52.484662
+          ],
+          [
+            13.372078,
+            52.483198
+          ],
+          [
+            13.36504,
+            52.502116
+          ]
+        ]
+      ]
+    },
+    "ids": null,
+    "time": "2018-01-01T00:00:00+00:00/2019-12-31T23:59:59+00:00",
+    "limit": 1,
+    "zoom_level": 14,
+    "time_series": null,
+    "max_cloud_cover": 100
+  },
+  "sharpening:1": {
+    "strength": "medium"
+  }
+}
