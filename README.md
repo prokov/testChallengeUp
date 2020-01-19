@@ -1,4 +1,8 @@
 # testChallengeUp
 
+Note: Solution is writtenn in Java
+
+Run the solution:
+
  - check out the project
- - run ./gradlew clean test
+ - in Terminal run ./gradlew clean test
