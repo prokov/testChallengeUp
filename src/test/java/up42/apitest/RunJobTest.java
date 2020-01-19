@@ -20,7 +20,7 @@ public class RunJobTest {
     @BeforeClass
     public static void init() {
 
-        //Security issue: it's dangerous to pass projectId and APIKey in url string, as it is be logged somewhere
+        //Security issue: it's dangerous to pass projectId and APIKey in url string, as it is logged normally
         token = Requests.retrieveToken(API_KEY, PROJECT_ID);
     }
 
