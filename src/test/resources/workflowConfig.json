@@ -1,13 +1,13 @@
 [
   {
-    "name": "sobloo-s2-l1c-aoiclipped:1",
+    "name": "sobloo-s2-l1c-aoiclipped",
     "parentName": null,
     "blockId": "3a381e6b-acb7-4cec-ae65-50798ce80e64"
 
   },
   {
-    "name": "sharpening:1",
-    "parentName": "sobloo-s2-l1c-aoiclipped:1",
+    "name": "sharpening",
+    "parentName": "sobloo-s2-l1c-aoiclipped",
     "blockId": "e374ea64-dc3b-4500-bb4b-974260fb203e"
   }
 ]

@@ -24,14 +24,13 @@ public class Requests {
                         .statusCode(200)
                         .extract()
                         .response();
-        //System.out.println("Response " + response.asString());
+        System.out.println("Response " + response.asString());
         return response.jsonPath().getString("data.accessToken");
 
     }
 
     public static String createRunJob(String token, String projectId, String workflowId, String job) {
 
-        String body = "grant_type=client_credentials";
         Response response =
                 given()
                         .contentType(ContentType.JSON)
@@ -94,7 +93,8 @@ public class Requests {
         return response.jsonPath().getString("data.id");
     }
 
-    public static Response configWorkflow(String token, String projectId, String workflowId, String body) {
+    public static Response configWorkflow(String token, String projectId,
+                                          String workflowId, String body) {
 
         Response response =
                 given()
@@ -102,13 +102,14 @@ public class Requests {
                         .header("Authorization", "Bearer " + token)
                         .body(body)
                         .when()
-                        .post("https://" + BASE_URL + "/projects/" + projectId + "/workflows/" + workflowId + "/tasks/")
+                        .post("https://" + BASE_URL + "/projects/" + projectId + "/workflows/"
+                                + workflowId + "/tasks/")
                         //   .put("https://" + BASE_URL + "/projects/" + projectId + "/workflows/" + workflowId)
                         .then()
                         .statusCode(200)
                         .extract()
                         .response();
-        //  System.out.println("Config  workflow response " + response.asString());
+          System.out.println("Config  workflow response " + response.asString());
         return response;
     }
 
