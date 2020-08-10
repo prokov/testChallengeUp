@@ -1,0 +1,18 @@
+{
+  "id": "256a12b9-5079-45cc-910f-a6235136e47f",
+  "name": "QA Challenge",
+  "description": "",
+  "projectId": "f3e50789-90da-4188-a143-df51f9872efb",
+  "tasks": [
+    {
+      "name": "sobloo-s2-l1c-aoiclipped:1",
+      "parentName": null,
+      "blockId": "3a381e6b-acb7-4cec-ae65-50798ce80e64"
+    },
+    {
+      "name": "sharpening:1",
+      "parentName": "sobloo-s2-l1c-aoiclipped:1",
+      "blockId": "e374ea64-dc3b-4500-bb4b-974260fb203e"
+    }
+  ]
+}

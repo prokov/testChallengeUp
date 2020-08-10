@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="up42.apitest.RunJobTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-01-30T20:07:22" hostname="MacBook-Pro.local" time="0.255">
+  <properties/>
+  <testcase name="runJobBasicFlow" classname="up42.apitest.RunJobTest" time="0.255">
+    <failure message="java.lang.AssertionError" type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.fail(Assert.java:95)
+	at up42.apitest.RunJobTest.runJobBasicFlow(RunJobTest.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:106)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:117)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+  </testcase>
+  <system-out><![CDATA[Create workflow response {"error":null,"data":{"id":"1281337d-5a4a-4d2e-a42f-38e6200c44bd","name":"TestWorkFlow","description":null,"createdAt":"2020-01-30T20:07:22.583Z","updatedAt":"2020-01-30T20:07:22.583Z","totalProcessingTime":0}}
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO up42.apitest.utils.Requests - Retrieve token response: {"data":{"accessToken":"eyJ0eXAiOiJKV1QiLCJraWQiOiIxIiwidG9rZW5fdHlwZSI6IkFDQ0VTUyIsImFsZyI6IlJTNTEyIn0.eyJpc3MiOiJiYWNrZW5kLWNvcmUiLCJqdGkiOiJlODMwZDJmYy03NzYxLTRjYmQtOTYwYi05MTg3OThkMzE5OWYiLCJpYXQiOjE1ODA0MTQ4NDEsInN1YiI6ImYzZTUwNzg5LTkwZGEtNDE4OC1hMTQzLWRmNTFmOTg3MmVmYiIsImF1ZCI6ImYzZTUwNzg5LTkwZGEtNDE4OC1hMTQzLWRmNTFmOTg3MmVmYiIsImV4cCI6MTU4MDQxNTE0MSwiYXV0aG9yaXRpZXMiOlsiUlVOX0pPQiIsIlZJRVdfUFJPSkVDVCJdfQ.AiJlosSQWn2N1lPlhWATV_hnUPlYqJvNTZPnE-Y48ddzyr2u4QEvtG6kK-SpgdP3H7m_evLMryc6HkH15jwiZN4y7sev2LYkoINX6vabp_Ku7NRSHOaqY3Jrs0EMCYZ5k1w1Kcd4_oTE92L6MUymI29nPiL0bnj-tjNx9fZPmlVRnGMNxd9ErVR1u7b_6q6223-EYx4K_lBkyknpP5UciQyIuEMeM0kuTrlZLaskl58Jv6IYexAvZKEe7lTA6h0VFxUD8IaUKI8I3JZZCPy47SDvphdH1ae_mcCVjiMa2dB3gZ7jQ3Ui7G9pgN0_89E04cIga0xGf-6qrOq7-h3hDbs8m-XZkLexKva8CsBeT94sg3LripCXhOWVii27fvXibIcBH1-QLk7y4QqsNj_gMq6s32zS_kJIJ1D9s96ECEtVhqYgBTh3xjxvMyWcHt2c9IuCrG5QQUcMMlcUBRW9i0C5KyeixJNy3fT1cskxeU39pQD1BgI4cexELCQyRnwHmlsMndp_k9hMCAZwSJDCqwvk6oipPcl03oxgoWCaX3K3BYwbZrEqFBl9ypbWFSLEiROa_f2fmW9lYvUFtwbmDaE5zmfG65xBmsSid8G5AV0gWzkILbYwq0MyUNqjt7rBDC4Cmr-8vkde_i7tQt_j71PiPmm_gLjKsGC_8F-HurQ"},"error":null,"access_token":"eyJ0eXAiOiJKV1QiLCJraWQiOiIxIiwidG9rZW5fdHlwZSI6IkFDQ0VTUyIsImFsZyI6IlJTNTEyIn0.eyJpc3MiOiJiYWNrZW5kLWNvcmUiLCJqdGkiOiJlODMwZDJmYy03NzYxLTRjYmQtOTYwYi05MTg3OThkMzE5OWYiLCJpYXQiOjE1ODA0MTQ4NDEsInN1YiI6ImYzZTUwNzg5LTkwZGEtNDE4OC1hMTQzLWRmNTFmOTg3MmVmYiIsImF1ZCI6ImYzZTUwNzg5LTkwZGEtNDE4OC1hMTQzLWRmNTFmOTg3MmVmYiIsImV4cCI6MTU4MDQxNTE0MSwiYXV0aG9yaXRpZXMiOlsiUlVOX0pPQiIsIlZJRVdfUFJPSkVDVCJdfQ.AiJlosSQWn2N1lPlhWATV_hnUPlYqJvNTZPnE-Y48ddzyr2u4QEvtG6kK-SpgdP3H7m_evLMryc6HkH15jwiZN4y7sev2LYkoINX6vabp_Ku7NRSHOaqY3Jrs0EMCYZ5k1w1Kcd4_oTE92L6MUymI29nPiL0bnj-tjNx9fZPmlVRnGMNxd9ErVR1u7b_6q6223-EYx4K_lBkyknpP5UciQyIuEMeM0kuTrlZLaskl58Jv6IYexAvZKEe7lTA6h0VFxUD8IaUKI8I3JZZCPy47SDvphdH1ae_mcCVjiMa2dB3gZ7jQ3Ui7G9pgN0_89E04cIga0xGf-6qrOq7-h3hDbs8m-XZkLexKva8CsBeT94sg3LripCXhOWVii27fvXibIcBH1-QLk7y4QqsNj_gMq6s32zS_kJIJ1D9s96ECEtVhqYgBTh3xjxvMyWcHt2c9IuCrG5QQUcMMlcUBRW9i0C5KyeixJNy3fT1cskxeU39pQD1BgI4cexELCQyRnwHmlsMndp_k9hMCAZwSJDCqwvk6oipPcl03oxgoWCaX3K3BYwbZrEqFBl9ypbWFSLEiROa_f2fmW9lYvUFtwbmDaE5zmfG65xBmsSid8G5AV0gWzkILbYwq0MyUNqjt7rBDC4Cmr-8vkde_i7tQt_j71PiPmm_gLjKsGC_8F-HurQ","refresh_token":null}
+[Test worker] ERROR up42.apitest.RunJobTest - Assertion error{"error":null,"data":{"id":"1281337d-5a4a-4d2e-a42f-38e6200c44bd","name":"TestWorkFlow","description":null,"createdAt":"2020-01-30T20:07:22.583Z","updatedAt":"2020-01-30T20:07:22.583Z","totalProcessingTime":0}}
+]]></system-err>
+</testsuite>

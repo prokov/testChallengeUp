@@ -6,6 +6,9 @@ plugins {
 
 test {
     testLogging.showStandardStreams = true
+    environment "apiKey", "j09AyRcM.h3TVGxvunkqM2UHZEZRngpir7WPJ1GWFYjQ"
+    environment "projectId", "f3e50789-90da-4188-a143-df51f9872efb"
+
 }
 
 group 'up42'
@@ -23,4 +26,5 @@ dependencies {
     compile 'com.jayway.restassured:rest-assured:2.9.0'
     compile 'commons-io:commons-io:2.6'
     compile group: 'org.skyscreamer', name: 'jsonassert', version: '1.5.0'
+    compile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.30'
 }

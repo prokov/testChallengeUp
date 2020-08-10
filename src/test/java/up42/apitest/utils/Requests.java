@@ -2,12 +2,14 @@ package up42.apitest.utils;
 
 import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.response.Response;
+import lombok.extern.slf4j.Slf4j;
 
 import static com.jayway.restassured.RestAssured.given;
 import static up42.apitest.Constants.BASE_URL;
 import static up42.apitest.Constants.TOKEN_ENDPOINT;
 
 
+@Slf4j
 public class Requests {
 
 
@@ -24,7 +26,11 @@ public class Requests {
                         .statusCode(200)
                         .extract()
                         .response();
-        System.out.println("Response " + response.asString());
+
+
+       // System.out.println("Response " + response.asString());
+
+        log.info("Retrieve token response: {}", response.asString() );
         return response.jsonPath().getString("data.accessToken");
 
     }
@@ -71,12 +77,14 @@ public class Requests {
                         .then()
                         .extract()
                         .response();
+
+
         System.out.println("Get workflow response " + response.asString());
         return response;
     }
 
 
-    public static String createWorkflow(String token, String projectId, String body) {
+    public static Response createWorkflow(String token, String projectId, String body) {
 
         Response response =
                 given()
@@ -90,7 +98,7 @@ public class Requests {
                         .extract()
                         .response();
         System.out.println("Create workflow response " + response.asString());
-        return response.jsonPath().getString("data.id");
+        return response;
     }
 
     public static Response configWorkflow(String token, String projectId,
@@ -109,7 +117,7 @@ public class Requests {
                         .statusCode(200)
                         .extract()
                         .response();
-          System.out.println("Config  workflow response " + response.asString());
+        System.out.println("Config  workflow response " + response.asString());
         return response;
     }
 

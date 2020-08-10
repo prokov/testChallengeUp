@@ -1,0 +1,230 @@
+{
+  "error": null,
+  "data": [
+    {
+      "id": "3a729ef1-f2e5-4043-b97c-0d2e0d4e564b",
+      "displayId": "3a729ef1",
+      "createdAt": "2020-01-29T13:58:09.398Z",
+      "updatedAt": "2020-01-29T13:58:09.398Z",
+      "name": "sobloo-s2-l1c-aoiclipped",
+      "parentsIds": [],
+      "blockName": "sobloo-s2-l1c-aoiclipped",
+      "blockVersionTag": "1.2.6",
+      "block": {
+        "id": "3a381e6b-acb7-4cec-ae65-50798ce80e64",
+        "createdAt": "2019-10-18T07:54:38.721Z",
+        "updatedAt": "2020-01-10T12:47:42.062Z",
+        "name": "sobloo-s2-l1c-aoiclipped",
+        "displayName": "Sentinel-2 L1C MSI AOI clipped",
+        "description": "Provides Sentinel-2 L1C MSI imagery in GeoTIFF format.\n\n",
+        "containerUrl": "registry.up42.com/marketplace/sobloo-s2-l1c-aoiclipped:UI6KfIym6IhyaXQpAUpHbSWBfKWbKdozYrsfdFoE",
+        "inputCapabilities": [],
+        "outputCapabilities": [
+          {
+            "name": "up42.data.aoiclipped"
+          }
+        ],
+        "provider": "Sobloo",
+        "providerWebsite": "https://sobloo.eu/",
+        "providerLogoUrl": "https://metadata.up42.com/3a381e6b-acb7-4cec-ae65-50798ce80e64/Sobloo_company_logo1578321874302.png",
+        "tags": [
+          "global",
+          "satellite",
+          "multispectral"
+        ],
+        "isPublic": true,
+        "isPublicVersion": true,
+        "isValid": true,
+        "parameters": {
+          "ids": {
+            "type": "array",
+            "default": null
+          },
+          "bbox": {
+            "type": "array",
+            "default": null
+          },
+          "time": {
+            "type": "dateRange",
+            "default": "2018-01-01T00:00:00+00:00/2019-12-31T23:59:59+00:00"
+          },
+          "limit": {
+            "type": "integer",
+            "default": 1,
+            "minimum": 1
+          },
+          "contains": {
+            "type": "geometry"
+          },
+          "intersects": {
+            "type": "geometry"
+          },
+          "zoom_level": {
+            "type": "integer",
+            "default": 14,
+            "maximum": 18,
+            "minimum": 10
+          },
+          "time_series": {
+            "type": "array",
+            "default": null
+          },
+          "max_cloud_cover": {
+            "type": "integer",
+            "default": 100,
+            "maximum": 100,
+            "minimum": 0
+          }
+        },
+        "type": "DATA",
+        "isDryRunSupported": true,
+        "version": "1.2.6",
+        "metadata": {
+          "overview": "Sentinel-2 L1C MSI AOI clipped provides AOI-Clipped Sentinel-2 data (L1C pre-processing or TOA) in GeoTIFF format. Sentinel 2 is a multi-spectral imaging mission, capturing visual, infrared and SWIR information. All Sentinel-2 L1C data are available since November 2016. The output data format is GeoTIFF.\n\nThe Copernicus Sentinel-2 is an optical mission at high spatial resolution (10 m to 60 m) over land and coastal waters. The mission is based on two satellites featuring the Multi-Spectral Instrument (MSI) with 13 spectral bands and a swath width of 290 km. This block outputs 4 bands: Red, Green, Blue and Alpha band. If you are interested in getting access to all 13 bands, you can find the full scene block: [here](https://up42.com/marketplace/block/98c1acfa-c141-4095-b2e6-acf52d110178).\n\n**Technical information**\n\nThe products are radiometrically and geometrically corrected (including orthorectification). Important application areas for Sentinel-2 imagery are land cover monitoring (agriculture, forestry), coastal area monitoring, inland water monitoring, glacier monitoring and flood mapping\n\n**Note:** This is a *Visual* imagery product that returns multispectral bands with 8 bits. Please check the corresponding block descriptions if they explicitly state that they can handle this type of data.\n\n|Feature|Info|\n|:-|:-|\n|Archive date / refresh frequency | S2 L1C from November 2016 / Archives available from mission start (2015) on request |\n|Frequency bands | 4 spectral bands (see \"Band details\" below for more information) |\n|Resolution|See resolution information in \"Band details\" below. Swath: 290km|\n|Processing level|L1C|\n|Output data format| AOI-Clipped|\n\n**Band details**\n\n| Band Category | Spatial Resolution | Revisit |\n|:---|:---|:---|\n| Visible (3)          | 10 m | 5 days |\n\n\n| Name | Resolution | Description |\n|:---|:---:|:---|\n| B01  | 10 m | Red, 664.6 nm (S2A), 664.9 nm (S2B) |\n| B02  | 10 m | Green, 559.8 nm (S2A), 559.0 nm (S2B)      |\n| B03  | 10 m | Blue, 492.4 nm (S2A), 492.1 nm (S2B)  |\n| B04  | 10 m | Alpha|\n\n**Use cases**\n\nThanks to the MSI and a frequent revisit (every 5 days) of every place on Earth, it is particularly valuable for agricultural and forestry applications and change detection. Nevertheless, other applications can also benefit from this optical instrument â€“ for example lake and coastal water pollution assessments or disaster monitoring, e.g. volcanic eruptions or landslides.\n\n**More information**\n\nFor more information about this data, please see the block's [documentation](https://docs.up42.com/up42-blocks/data/sobloo-s2-l1c-aoiclipped.html) or check the [provider website](https://sobloo.eu/).\n\n\n",
+          "termsAndConditionsUrl": "https://metadata.up42.com/Sobloo/S2-L1C-GRD-Full-Scene/Sentinel_Data_Legal_Notice.pdf",
+          "blockThumbnailUrl": "https://metadata.up42.com/Sobloo/S2-L1C-GRD-Full-Scene/0_Sentinel2_Avatar_2.jpg",
+          "pricingStrategy": {
+            "id": "fd10c19d-c03f-4c3a-8df4-b7669ccb1ec8",
+            "displayId": "fd10c19d",
+            "createdAt": "2020-01-10T12:47:42.060Z",
+            "updatedAt": "2020-01-10T12:47:42.060Z",
+            "type": "MEGABYTE_OUTPUT",
+            "credits": 0
+          },
+          "blockMarketplaceSampleData": [
+            {
+              "id": "c7c9ea86-13b9-42d9-9936-510b7a88a123",
+              "displayId": "c7c9ea86",
+              "createdAt": "2020-01-10T12:47:42.061Z",
+              "updatedAt": "2020-01-10T12:47:42.061Z",
+              "value": "https://metadata.up42.com/Sobloo/S2-L1C-GRD-Full-Scene/Sentinel2_1.jpg",
+              "type": "IMAGE"
+            },
+            {
+              "id": "3acfefd2-a0cb-4839-8a80-705dd8c6310b",
+              "displayId": "3acfefd2",
+              "createdAt": "2020-01-10T12:47:42.061Z",
+              "updatedAt": "2020-01-10T12:47:42.061Z",
+              "value": "https://metadata.up42.com/Sobloo/S2-L1C-GRD-Full-Scene/Sentinel2_2.jpg",
+              "type": "IMAGE"
+            },
+            {
+              "id": "0ac7a92d-1672-444e-b519-e412ef35dc3c",
+              "displayId": "0ac7a92d",
+              "createdAt": "2020-01-10T12:47:42.061Z",
+              "updatedAt": "2020-01-10T12:47:42.061Z",
+              "value": "https://metadata.up42.com/Sobloo/S2-L1C-GRD-Full-Scene/Sentinel2_3.jpg",
+              "type": "IMAGE"
+            },
+            {
+              "id": "728c04c5-ab7a-4a57-b72f-ece3fc2f8c35",
+              "displayId": "728c04c5",
+              "createdAt": "2020-01-10T12:47:42.061Z",
+              "updatedAt": "2020-01-10T12:47:42.061Z",
+              "value": "https://metadata.up42.com/Sobloo/S2-L1C-GRD-Full-Scene/Sentinel2_4.jpg",
+              "type": "IMAGE"
+            },
+            {
+              "id": "67bab7df-8852-41e9-8925-9707d2051dec",
+              "displayId": "67bab7df",
+              "createdAt": "2020-01-10T12:47:42.061Z",
+              "updatedAt": "2020-01-10T12:47:42.061Z",
+              "value": "https://metadata.up42.com/Sobloo/S2-L1C-GRD-Full-Scene/Sentinel2_5.jpg",
+              "type": "IMAGE"
+            },
+            {
+              "id": "e7e639cd-32eb-46a2-a5e0-48994e1efe0c",
+              "displayId": "e7e639cd",
+              "createdAt": "2020-01-10T12:47:42.061Z",
+              "updatedAt": "2020-01-10T12:47:42.061Z",
+              "value": "https://metadata.up42.com/Sobloo/S2-L1C-GRD-Full-Scene/Sentinel2_6.jpg",
+              "type": "IMAGE"
+            },
+            {
+              "id": "368945ae-cf05-42ce-90b1-463258a78cf0",
+              "displayId": "368945ae",
+              "createdAt": "2020-01-10T12:47:42.062Z",
+              "updatedAt": "2020-01-10T12:47:42.062Z",
+              "value": "https://metadata.up42.com/Sobloo/S2-L1C-GRD-Full-Scene/Sentinel2_7.jpg",
+              "type": "IMAGE"
+            }
+          ]
+        },
+        "machineName": "LARGE"
+      }
+    },
+    {
+      "id": "d0876a0d-8fff-4c22-b935-6ecbc2d53b3b",
+      "displayId": "d0876a0d",
+      "createdAt": "2020-01-29T13:58:09.405Z",
+      "updatedAt": "2020-01-29T13:58:09.405Z",
+      "name": "sharpening",
+      "parentsIds": [
+        "3a729ef1-f2e5-4043-b97c-0d2e0d4e564b"
+      ],
+      "blockName": "sharpening",
+      "blockVersionTag": "1.0.2-public",
+      "block": {
+        "id": "e374ea64-dc3b-4500-bb4b-974260fb203e",
+        "createdAt": "2019-10-31T15:54:49.340Z",
+        "updatedAt": "2019-12-18T10:56:21.752Z",
+        "name": "sharpening",
+        "displayName": "Sharpening Filter",
+        "description": "This block enhances the sharpness of a raster image by applying an unsharp mask filter algorithm.",
+        "containerUrl": "registry.up42.com/marketplace/sharpening:Xog01qVRDhOUreVBztMddrnaaBg57SPiMBNKpAsX",
+        "inputCapabilities": [
+          {
+            "name": "up42.data.aoiclipped"
+          }
+        ],
+        "outputCapabilities": [
+          {
+            "name": "up42.data.aoiclipped"
+          }
+        ],
+        "provider": "UP42",
+        "providerWebsite": "https://up42.com/",
+        "providerLogoUrl": "https://metadata.up42.com/e374ea64-dc3b-4500-bb4b-974260fb203e/UP42_Logo_DarkMatter_RGB1576516028819.png",
+        "tags": [
+          "processing"
+        ],
+        "isPublic": true,
+        "isPublicVersion": true,
+        "isValid": true,
+        "parameters": {
+          "strength": {
+            "type": "string",
+            "default": "medium"
+          }
+        },
+        "type": "PROCESSING",
+        "isDryRunSupported": false,
+        "version": "1.0.2-public",
+        "metadata": {
+          "overview": "Sharpening Filter enhances the sharpness of a raster image by applying an [unsharpen masking filter algorithm](https://en.wikipedia.org/wiki/Unsharp_masking). It supports three possible sharpening strength options. Both the input and output are GeoTIFF files.\n\nIn the unsharp masking algorithm, the sharp details are identified as the difference between the original image and its blurred version. These details are then scaled, and added back to the original image.\n\nThe source code is published as free software / open source (MIT License) [here](https://github.com/up42/sharpening).\n\n\n| General Information   | Description                                                                 |\n| --------------------- |-----------------------------------------------------------------------------|\n| Block Type            | processing                                             |\n| Supported Input Types | AOI Clipped                                |\n| Output format | AOI-Clipped                                |\n| Resolution            | identical to the input                                                      |\n\n**More information**\n\nCheck the block's [documentation](https://docs.up42.com/up42-blocks/processing/sharpening.html) for more information.\n",
+          "termsAndConditionsUrl": "https://metadata.up42.com/e374ea64-dc3b-4500-bb4b-974260fb203e/MIT_License1572629301557.pdf",
+          "blockThumbnailUrl": "https://metadata.up42.com/e374ea64-dc3b-4500-bb4b-974260fb203e/Sharpening_Filter_Thumbnail1576666547713.png",
+          "pricingStrategy": {
+            "id": "c88f7793-199f-4052-aae9-7754677fba94",
+            "displayId": "c88f7793",
+            "createdAt": "2019-12-12T09:54:17.087Z",
+            "updatedAt": "2019-12-12T09:54:17.087Z",
+            "type": "SQUARE_KM_INPUT",
+            "credits": 0
+          },
+          "blockMarketplaceSampleData": [
+            {
+              "id": "fd62e254-f97d-48b2-beaf-7c794e777ab4",
+              "displayId": "fd62e254",
+              "createdAt": "2019-12-18T10:56:21.749Z",
+              "updatedAt": "2019-12-18T10:56:21.749Z",
+              "value": "https://metadata.up42.com/e374ea64-dc3b-4500-bb4b-974260fb203e/Sharpening_Filter_Carousel1576666580746.png",
+              "type": "IMAGE"
+            }
+          ]
+        },
+        "machineName": "LARGE"
+      }
+    }
+  ]
+}
